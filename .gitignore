@@ -1,0 +1,13 @@
+# Jekyll compiled outputs
+_site/
+.jekyll-cache/
+.jekyll-metadata
+
+# Sass cache
+.sass-cache/
+
+# Bundler & local gems
+.bundle/
+vendor/
+.yardoc/
+_yardoc/

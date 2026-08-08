@@ -1,0 +1,51 @@
+<section class="about-section" id="about">
+  <div class="section-container">
+    <div class="about-grid">
+      <!-- Left Column: Context and Core Statement -->
+      <div class="about-info-panel">
+        <span class="section-tag">{{ site.data.content.about.title }}</span>
+        <h2 class="section-title">{{ site.data.content.about.subtitle }}</h2>
+        <p class="section-description">{{ site.data.content.brand.purpose }}</p>
+        
+        <div class="target-card">
+          <div class="target-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+              <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+            </svg>
+          </div>
+          <div class="target-text">
+            <h3>Designed For</h3>
+            <p>{{ site.data.content.brand.target_audience }}</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Right Column: Vision & Mission Cards -->
+      <div class="about-cards-panel">
+        <div class="glass-card vision-card">
+          <div class="card-icon vision-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10" />
+              <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" />
+            </svg>
+          </div>
+          <h3 class="card-title">Our Vision</h3>
+          <p class="card-content">{{ site.data.content.about.vision }}</p>
+        </div>
+        
+        <div class="glass-card mission-card">
+          <div class="card-icon mission-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+            </svg>
+          </div>
+          <h3 class="card-title">Our Mission</h3>
+          <p class="card-content">{{ site.data.content.about.mission }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

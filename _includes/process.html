@@ -1,0 +1,25 @@
+<section class="process-section" id="process">
+  <div class="section-container">
+    <div class="section-intro">
+      <span class="section-tag">{{ site.data.content.process.title }}</span>
+      <h2 class="section-title">{{ site.data.content.process.subtitle }}</h2>
+    </div>
+    
+    <div class="process-timeline">
+      {% for step in site.data.content.process.steps %}
+        <div class="process-step">
+          <!-- Step Connector line -->
+          {% unless forloop.last %}
+            <div class="step-connector" aria-hidden="true"></div>
+          {% endunless %}
+          
+          <div class="process-card">
+            <div class="step-number">{{ step.number }}</div>
+            <h3 class="step-name">{{ step.name }}</h3>
+            <p class="step-description">{{ step.description }}</p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

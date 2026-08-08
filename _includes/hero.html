@@ -1,0 +1,59 @@
+<section class="hero-section" id="hero">
+  <div class="hero-container">
+    <div class="hero-content">
+      <span class="hero-tagline">{{ site.data.content.brand.tagline }}</span>
+      <h1 class="hero-title">{{ site.data.content.hero.title }}</h1>
+      <p class="hero-subtitle">{{ site.data.content.hero.subtitle }}</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary btn-large">{{ site.data.content.hero.cta_primary }}</a>
+        <a href="#services" class="btn btn-secondary btn-large">{{ site.data.content.hero.cta_secondary }}</a>
+      </div>
+    </div>
+    
+    <div class="hero-visual" aria-hidden="true">
+      <div class="glow-backdrop"></div>
+      <svg class="orbital-mesh" viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Glowing central core -->
+        <circle cx="300" cy="300" r="16" fill="url(#core-glow)" />
+        
+        <!-- Orbits -->
+        <circle cx="300" cy="300" r="100" stroke="url(#orbit-grad-1)" stroke-width="1.5" stroke-dasharray="4 8" class="orbit-line orbit-line-1" />
+        <circle cx="300" cy="300" r="180" stroke="url(#orbit-grad-2)" stroke-width="1" class="orbit-line orbit-line-2" />
+        <circle cx="300" cy="300" r="250" stroke="url(#orbit-grad-3)" stroke-width="1" stroke-dasharray="8 12" class="orbit-line orbit-line-3" />
+        
+        <!-- Satellites -->
+        <g class="satellite-group satellite-group-1">
+          <circle cx="300" cy="200" r="6" fill="#00B4D8" />
+          <circle cx="300" cy="200" r="12" stroke="#00B4D8" stroke-width="1" stroke-opacity="0.4" />
+        </g>
+        <g class="satellite-group satellite-group-2">
+          <circle cx="300" cy="120" r="8" fill="#6C5CE7" />
+          <circle cx="300" cy="120" r="16" stroke="#6C5CE7" stroke-width="1" stroke-opacity="0.4" />
+        </g>
+        <g class="satellite-group satellite-group-3">
+          <circle cx="300" cy="50" r="5" fill="#00B4D8" />
+        </g>
+
+        <defs>
+          <radialGradient id="core-glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" transform="translate(300 300) rotate(90) scale(16)">
+            <stop stop-color="#00B4D8" />
+            <stop offset="1" stop-color="#6C5CE7" />
+          </radialGradient>
+          <linearGradient id="orbit-grad-1" x1="200" y1="200" x2="400" y2="400" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#E2E8F0" stop-opacity="0.2" />
+            <stop offset="1" stop-color="#00B4D8" stop-opacity="0.6" />
+          </linearGradient>
+          <linearGradient id="orbit-grad-2" x1="120" y1="120" x2="480" y2="480" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#E2E8F0" stop-opacity="0.1" />
+            <stop offset="0.5" stop-color="#6C5CE7" stop-opacity="0.5" />
+            <stop offset="1" stop-color="#E2E8F0" stop-opacity="0.1" />
+          </linearGradient>
+          <linearGradient id="orbit-grad-3" x1="50" y1="50" x2="550" y2="550" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#E2E8F0" stop-opacity="0.1" />
+            <stop offset="1" stop-color="#00B4D8" stop-opacity="0.3" />
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,104 @@
+brand:
+  name: "Exosphic"
+  tagline: "Engineering your growth"
+  purpose: "Custom software development for business growth including website development."
+  target_audience: "SMEs, Startups, and Non-profits"
+  email: "exosphic@gmail.com"
+  phone: "+94 71 0780 179"
+  location: "Sri Lanka"
+
+navigation:
+  links:
+    - name: "About"
+      url: "#about"
+    - name: "Values"
+      url: "#values"
+    - name: "Services"
+      url: "#services"
+    - name: "Process"
+      url: "#process"
+  cta: "Get Started"
+
+hero:
+  title: "Precision Software Engineering for Growing Businesses."
+  subtitle: "We engineer custom web platforms and scalable software systems designed specifically to propel small businesses into their next orbit."
+  cta_primary: "Start Your Project"
+  cta_secondary: "Explore Services"
+
+about:
+  title: "Who We Are"
+  subtitle: "Built by experienced software engineers dedicated to small business transformation."
+  vision: "To propel small businesses beyond traditional boundaries by making enterprise-grade software engineering accessible, frictionless, and transformative."
+  mission: "To partner with growing businesses to design, engineer, and deploy high-performance digital systems that streamline operations, elevate brand presence, and drive predictable revenue."
+
+values:
+  title: "Our Core Values"
+  list:
+    - name: "Precision Engineering"
+      description: "Uncompromising standards in software architecture, security, and code quality."
+      icon: "code"
+    - name: "Growth Velocity"
+      description: "Building software systems engineered specifically to scale operations and accelerate business outcomes."
+      icon: "rocket"
+    - name: "Cosmic Clarity"
+      description: "Radical transparency in communication, milestones, and deliverables without technical jargon."
+      icon: "eye"
+    - name: "Infinite Adaptability"
+      description: "Scalable, modular architecture built to evolve seamlessly as your business expands."
+      icon: "cpu"
+
+services:
+  title: "What We Build"
+  subtitle: "Tailored engineering solutions built for performance, reliability, and business impact."
+  items:
+    - name: "Custom Web Development"
+      description: "Blazing fast, SEO-optimized websites built to convert visitors into loyal clients."
+    - name: "Enterprise Business Systems"
+      description: "Bespoke software tailored to automate workflows and optimize operational efficiency."
+    - name: "API & Cloud Integration"
+      description: "Connecting your software ecosystem to eliminate data silos and manual entry."
+    - name: "System Modernization"
+      description: "Upgrading legacy tools into scalable, secure, modern digital assets."
+
+process:
+  title: "Our Engineering Process"
+  subtitle: "How we take your ideas from concept to production-grade reality."
+  steps:
+    - number: "01"
+      name: "Discovery & Strategy"
+      description: "We dive deep into your business operations, defining requirements and outlining a clear roadmap."
+    - number: "02"
+      name: "Iterative Engineering"
+      description: "High-velocity development using clean, modular code with regular milestones and visual check-ins."
+    - number: "03"
+      name: "Rigorous Deployment"
+      description: "Automated testing and cloud deployment with zero downtime, ensuring a seamless launch."
+    - number: "04"
+      name: "Scale & Optimize"
+      description: "Continuous monitoring, SEO fine-tuning, and system upgrades to support your ongoing growth."
+
+contact:
+  title: "Get In Touch"
+  subtitle: "Ready to engineer your growth? Let's discuss your project today."
+  form_action: "https://formspree.io/f/xjybggqn"
+  fields:
+    name_label: "Your Name"
+    email_label: "Email Address"
+    company_label: "Company / Business Name"
+    message_label: "How can we help you?"
+    submit_button: "Send Message"
+
+footer:
+  copyright_text: "© 2026 Exosphic. All rights reserved."
+  privacy_text: "Privacy Policy"
+  terms_text: "Terms of Service"
+  socials:
+    # - name: "GitHub"
+    #   url: "https://github.com/exosphic"
+    #   icon: "github"
+    - name: "LinkedIn"
+      url: "https://linkedin.com/company/exosphic"
+      icon: "linkedin"
+    # - name: "Twitter"
+    #   url: "https://twitter.com/exosphic"
+    #   icon: "twitter"

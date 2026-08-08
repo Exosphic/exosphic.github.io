@@ -1,0 +1,26 @@
+<header class="site-header">
+  <div class="header-container">
+    <a href="{{ '/' | relative_url }}" class="logo" aria-label="{{ site.data.content.brand.name }} Home">
+      <img src="{{ '/assets/images/exosphic_round.png' | relative_url }}" alt="" class="logo-icon">
+      <span class="logo-text">{{ site.data.content.brand.name }}</span>
+      <span class="logo-dot">.</span>
+    </a>
+
+    <button class="nav-toggle" aria-label="Toggle Navigation" aria-expanded="false" aria-controls="primary-nav">
+      <span class="hamburger-bar"></span>
+      <span class="hamburger-bar"></span>
+      <span class="hamburger-bar"></span>
+    </button>
+
+    <nav id="primary-nav" class="nav-menu" aria-label="Primary Navigation">
+      <ul class="nav-list">
+        {% for link in site.data.content.navigation.links %}
+          <li class="nav-item">
+            <a href="{{ link.url }}" class="nav-link">{{ link.name }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+      <a href="#contact" class="btn btn-primary header-cta">{{ site.data.content.navigation.cta }}</a>
+    </nav>
+  </div>
+</header>
