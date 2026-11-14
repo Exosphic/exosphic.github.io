@@ -1,12 +1,17 @@
+{% assign process_title = site.data.content.process.title | default: '' | strip %}
+{% assign process_subtitle = site.data.content.process.subtitle | default: '' | strip %}
 <section class="process-section" id="process">
   <div class="section-container">
-    <div class="section-intro">
-      <span class="section-tag">{{ site.data.content.process.title }}</span>
-      <h2 class="section-title">{{ site.data.content.process.subtitle }}</h2>
-    </div>
+    {% if process_title != '' or process_subtitle != '' %}
+      <div class="section-intro">
+        {% if process_title != '' %}<span class="section-tag">{{ process_title }}</span>{% endif %}
+        {% if process_subtitle != '' %}<h2 class="section-title">{{ process_subtitle }}</h2>{% endif %}
+      </div>
+    {% endif %}
     
     <div class="process-timeline">
       {% for step in site.data.content.process.steps %}
+        {% assign step_name = step.name | default: '' | strip %}
         <div class="process-step">
           <!-- Step Connector line -->
           {% unless forloop.last %}
@@ -15,7 +20,7 @@
           
           <div class="process-card">
             <div class="step-number">{{ step.number }}</div>
-            <h3 class="step-name">{{ step.name }}</h3>
+            {% if step_name != '' %}<h3 class="step-name">{{ step_name }}</h3>{% endif %}
             <p class="step-description">{{ step.description }}</p>
           </div>
         </div>

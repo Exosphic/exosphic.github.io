@@ -3,6 +3,7 @@
     <div class="footer-top">
       <div class="footer-brand">
         <a href="{{ '/' | relative_url }}" class="logo" aria-label="{{ site.data.content.brand.name }} Home">
+          <img src="{{ '/assets/images/exosphic_logo.svg' | relative_url }}" alt="" class="logo-icon" width="30" height="30">
           <span class="logo-text">{{ site.data.content.brand.name }}</span>
           <span class="logo-dot">.</span>
         </a>
@@ -36,13 +37,13 @@
     
     <div class="footer-bottom">
       <p class="copyright">{{ site.data.content.footer.copyright_text }}</p>
-      
+
       <div class="footer-legal">
-        <a href="#privacy" class="legal-link">{{ site.data.content.footer.privacy_text }}</a>
-        <a href="#terms" class="legal-link">{{ site.data.content.footer.terms_text }}</a>
+        <a href="{{ '/privacy/' | relative_url }}" class="legal-link">{{ site.data.content.footer.privacy_text }}</a>
+        <a href="{{ '/terms/' | relative_url }}" class="legal-link">{{ site.data.content.footer.terms_text }}</a>
       </div>
-      
-      <a href="#hero" class="back-to-top" aria-label="Scroll back to top">
+
+      <a href="{% unless page.url == '/' %}{{ '/' | relative_url }}{% endunless %}#hero" class="back-to-top" aria-label="{% if page.url == '/' %}Scroll back to top{% else %}Back to homepage{% endif %}">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <polyline points="18 15 12 9 6 15" />
         </svg>

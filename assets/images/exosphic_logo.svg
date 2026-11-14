@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+
+  <!-- Upper Dome & Crossbar (with concentric D-cutout) -->
+  <path id="exosphic-upper" fill="#46B1E1" fill-rule="evenodd" d="M 1.06 114.50 A 100 100 0 1 1 198.94 114.50 Z M 39.09 83.70 A 63.05 63.05 0 0 1 160.91 83.70 Z" />
+
+  <!-- Lower Orbital Arc -->
+  <path id="exosphic-lower" fill="#46B1E1" d="M 58.87 147.79 A 63.05 63.05 0 0 0 141.13 147.79 L 169.97 171.45 A 100 100 0 0 1 30.03 171.45 Z" />
+</svg>

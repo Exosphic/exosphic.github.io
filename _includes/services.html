@@ -1,16 +1,21 @@
+{% assign services_title = site.data.content.services.title | default: '' | strip %}
+{% assign services_subtitle = site.data.content.services.subtitle | default: '' | strip %}
 <section class="services-section" id="services">
   <div class="section-container">
-    <div class="section-intro">
-      <span class="section-tag">{{ site.data.content.services.title }}</span>
-      <h2 class="section-title">{{ site.data.content.services.subtitle }}</h2>
-    </div>
+    {% if services_title != '' or services_subtitle != '' %}
+      <div class="section-intro">
+        {% if services_title != '' %}<span class="section-tag">{{ services_title }}</span>{% endif %}
+        {% if services_subtitle != '' %}<h2 class="section-title">{{ services_subtitle }}</h2>{% endif %}
+      </div>
+    {% endif %}
 
     <div class="services-grid">
       {% for service in site.data.content.services.items %}
+      {% assign service_name = service.name | default: '' | strip %}
       <div class="service-card">
         <div class="service-glow-border"></div>
         <div class="service-content">
-          <h3 class="service-title">{{ service.name }}</h3>
+          {% if service_name != '' %}<h3 class="service-title">{{ service_name }}</h3>{% endif %}
           <p class="service-description">{{ service.description }}</p>
           <!-- <div class="service-learn-more">
               <span>Learn more</span>

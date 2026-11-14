@@ -1,9 +1,12 @@
+{% assign hero_tagline = site.data.content.brand.tagline | default: '' | strip %}
+{% assign hero_title = site.data.content.hero.title | default: '' | strip %}
+{% assign hero_subtitle = site.data.content.hero.subtitle | default: '' | strip %}
 <section class="hero-section" id="hero">
   <div class="hero-container">
     <div class="hero-content">
-      <span class="hero-tagline">{{ site.data.content.brand.tagline }}</span>
-      <h1 class="hero-title">{{ site.data.content.hero.title }}</h1>
-      <p class="hero-subtitle">{{ site.data.content.hero.subtitle }}</p>
+      {% if hero_tagline != '' %}<span class="hero-tagline">{{ hero_tagline }}</span>{% endif %}
+      {% if hero_title != '' %}<h1 class="hero-title">{{ hero_title }}</h1>{% endif %}
+      {% if hero_subtitle != '' %}<p class="hero-subtitle">{{ hero_subtitle }}</p>{% endif %}
       <div class="hero-actions">
         <a href="#contact" class="btn btn-primary btn-large">{{ site.data.content.hero.cta_primary }}</a>
         <a href="#services" class="btn btn-secondary btn-large">{{ site.data.content.hero.cta_secondary }}</a>

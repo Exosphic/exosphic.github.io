@@ -1,10 +1,12 @@
+{% assign about_title = site.data.content.about.title | default: '' | strip %}
+{% assign about_subtitle = site.data.content.about.subtitle | default: '' | strip %}
 <section class="about-section" id="about">
   <div class="section-container">
     <div class="about-grid">
       <!-- Left Column: Context and Core Statement -->
       <div class="about-info-panel">
-        <span class="section-tag">{{ site.data.content.about.title }}</span>
-        <h2 class="section-title">{{ site.data.content.about.subtitle }}</h2>
+        {% if about_title != '' %}<span class="section-tag">{{ about_title }}</span>{% endif %}
+        {% if about_subtitle != '' %}<h2 class="section-title">{{ about_subtitle }}</h2>{% endif %}
         <p class="section-description">{{ site.data.content.brand.purpose }}</p>
         
         <div class="target-card">
