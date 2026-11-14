@@ -1,10 +1,10 @@
 brand:
   name: "Exosphic"
   tagline: "Engineering your growth"
-  purpose: "Custom software development for business growth including website development."
+  purpose: "You’ll work directly with us to understand the problem, decide what’s worth building, and bring it to launch."
   target_audience: "SMEs, Startups, and Non-profits"
   email: "hello@exosphic.com"
-  phone: "+94 71 0780 179"
+  phone: "+94 77 9485 724"
   location: "Sri Lanka"
 
 navigation:
@@ -21,13 +21,13 @@ navigation:
 
 hero:
   title: "Precision Software Engineering for Growing Businesses."
-  subtitle: "We engineer custom web platforms and scalable software systems designed specifically to propel small businesses into their next orbit."
+  subtitle: "We help small teams build useful web tools and reduce repetitive work."
   cta_primary: "Start Your Project"
   cta_secondary: "Explore Services"
 
 about:
-  title: "Who We Are"
-  subtitle: "Built by experienced software engineers dedicated to small business transformation."
+  title: ""
+  subtitle: "We’re a team of experienced independent software engineers based in Sri Lanka"
   vision: "To propel small businesses beyond traditional boundaries by making enterprise-grade software engineering accessible, frictionless, and transformative."
   mission: "To partner with growing businesses to design, engineer, and deploy high-performance digital systems that streamline operations, elevate brand presence, and drive predictable revenue."
 
@@ -48,7 +48,7 @@ values:
       icon: "cpu"
 
 services:
-  title: "What We Build"
+  title: ""
   subtitle: "Tailored engineering solutions built for performance, reliability, and business impact."
   items:
     - name: "Custom Web Development"
@@ -61,7 +61,7 @@ services:
       description: "Upgrading legacy tools into scalable, secure, modern digital assets."
 
 process:
-  title: "Our Engineering Process"
+  title: ""
   subtitle: "How we take your ideas from concept to production-grade reality."
   steps:
     - number: "01"
@@ -69,17 +69,17 @@ process:
       description: "We dive deep into your business operations, defining requirements and outlining a clear roadmap."
     - number: "02"
       name: "Iterative Engineering"
-      description: "High-velocity development using clean, modular code with regular milestones and visual check-ins."
+      description: "Client-friendly development with clean, modular code with regular milestones and visual check-ins."
     - number: "03"
       name: "Rigorous Deployment"
-      description: "Automated testing and cloud deployment with zero downtime, ensuring a seamless launch."
+      description: "Automated testing, cloud deployment, and dedicated maintenance, ensuring a seamless functionality."
     - number: "04"
       name: "Scale & Optimize"
       description: "Continuous monitoring, SEO fine-tuning, and system upgrades to support your ongoing growth."
 
 contact:
   title: "Get In Touch"
-  subtitle: "Ready to engineer your growth? Let's discuss your project today."
+  subtitle: "Tell us what you’re trying to build or what’s slowing your team down. We can discuss a sensible next step."
   form_action: "https://formspree.io/f/xjybggqn"
   fields:
     name_label: "Your Name"
