@@ -11,8 +11,8 @@ navigation:
   links:
     - name: "About"
       url: "#about"
-    - name: "Values"
-      url: "#values"
+    # - name: "Values"
+    #   url: "#values"
     - name: "Services"
       url: "#services"
     - name: "Process"
